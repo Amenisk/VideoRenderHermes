@@ -1,0 +1,37 @@
+﻿<Page x:Class="VideoRenderHermes.PagesApp.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VideoRenderHermes.PagesApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthorizationPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10" Click="GoToRegPage">Регистрация</Button>
+        <TextBlock Grid.Column="1" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Bottom">Авторизация</TextBlock>
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="10" VerticalAlignment="Center">
+            <TextBlock>Логин</TextBlock>
+            <TextBox x:Name="tbLogin"></TextBox>
+            <TextBlock>Пароль</TextBlock>
+            <TextBox x:Name="tbPassword"></TextBox>
+            <StackPanel Margin="5" Orientation="Horizontal">
+                <CheckBox x:Name="cbRemember"></CheckBox>
+                <TextBlock Margin="5 0 0 0">Запомнить меня</TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <Button Grid.Column="1" Grid.Row="2" Content="Авторизироваться" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10" Click="Authorization"></Button>
+    </Grid>
+
+</Page>

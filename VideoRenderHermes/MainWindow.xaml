@@ -1,0 +1,26 @@
+﻿<Window x:Class="VideoRenderHermes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideoRenderHermes"
+        mc:Ignorable="d"
+        Title="VideoRenderHermes" Height="500" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="#FFBACBD2"  HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Horizontal" Background="#FFBACBD2" >
+                <Image Source="/Images/VHS.png" Margin="5" ></Image>
+                <TextBlock FontSize="32" VerticalAlignment="Center">Видеопрокат Hermes</TextBlock>
+            </StackPanel>
+            <Button VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 30 0" Padding="5" Click="GoBack">Назад</Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
+        </Grid>
+
+    </Grid>
+</Window>

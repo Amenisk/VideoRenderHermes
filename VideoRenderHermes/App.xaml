@@ -1,0 +1,27 @@
+﻿<Application x:Class="VideoRenderHermes.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:VideoRenderHermes"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FFE0DD46"></Setter>
+            <Setter Property="FontFamily" Value="Arial"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Arial"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Arial"></Setter>
+        </Style>
+        <Style TargetType="Grid">
+            <Setter Property="Background" Value="#FFFFF9F1"></Setter>
+        </Style>
+        <Style TargetType="StackPanel">
+            <Setter Property="Background" Value="#FFFFF9F1"></Setter>
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="Background" Value="#FFFFF9F1"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>
